@@ -5,7 +5,6 @@ body {
     display: flex;
     justify-content:center;
     align-items:center;
-    height:20vh;
     background:#112c38;
   }
   
@@ -67,7 +66,7 @@ body {
     transform:scaleX(1);
   }
   .logo{
-    margin-left: -220px;
+    margin-left: -200px;
    
   }
   .line{
@@ -76,8 +75,51 @@ body {
     background-color: gray;
     margin-top: 30px;
   }
- 
 
+  .container .menu{
+    display: none;
+    position: absolute;
+    top: 0.75rem;
+    right: 0.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.25rem;
+    height: 2rem;
+    
+  }
+
+  .container .menu span{
+    height: 0.4rem;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 0.2rem;
+    
+  }
+ 
+@media(max-width:480px){
+  .container .menu{
+    display: flex;
+  }
+  .container{
+    flex-direction: column;
+    align-items: start;
+  }
+  .container ul{
+    /* display: none; */
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 0.25rem;
+  }
+  .container ul li{
+    width: 100%;
+    text-align: center;
+    
+  }
+  .container ul li a {
+    margin: 0.2rem 0.5rem;
+  }
+ 
+}
 
 
 
